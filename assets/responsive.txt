@@ -1,0 +1,125 @@
+/* Existing CSS content remains the same, with additions below */
+
+/* ============================= */
+/* 9️⃣ RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Mobile Devices (up to 767px) */
+@media screen and (max-width: 767px) {
+    /* Header Responsive */
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .header-logo img {
+        height: 40px;
+    }
+
+    /* Mobile Menu Toggle */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 3px 0;
+        transition: 0.4s;
+    }
+
+    .header-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .header-links.active {
+        display: block;
+    }
+
+    /* Column Buttons Responsive */
+    .column-buttons {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 100px;
+    }
+
+    .icon-container {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* "Por qué elegirnos" Section Responsive */
+    .elegirnos-container {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .elegirnos-texto, .imagen-container {
+        flex: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .elegirnos-texto {
+        margin-bottom: 20px;
+    }
+
+    .body-spacer {
+        margin: 200px 0;
+    }
+
+    /* Footer Responsive */
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-container p:not(:last-child)::after {
+        content: none;
+    }
+
+    .contact-info {
+        bottom: 20px;
+        right: 10px;
+    }
+}
+
+/* Tablet Devices (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .flex-container {
+        padding: 80px 20px 0;
+    }
+
+    .column-buttons {
+        gap: 40px;
+        padding-top: 150px;
+    }
+
+    .elegirnos-container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .elegirnos-texto {
+        padding-right: 10px;
+    }
+}
+
+/* Notebooks and Larger Screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+    .flex-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .column-buttons {
+        gap: 80px;
+    }
+}

@@ -1,0 +1,32 @@
+<div class="contact-info" style="border: none; width: auto; padding: 10px; position: fixed; bottom: 20px; right: 20px;">
+        <a href="https://wa.me/543516277542" target="_blank" class="whatsapp-btn">
+            <img src="assets/whats-300x300.png" alt="WhatsApp" />
+        </a>
+        <a href="https://www.instagram.com/cotizala.com" target="_blank" class="instagram-btn">
+            <img src="assets/Ins.png" alt="Instagram" />
+        </a>
+        <a href="https://web.facebook.com/profile.php?id=100063766922087#" target="_blank" class="facebook-btn">
+            <img src="assets/FACE.jpg" alt="facebook" />
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer style="padding: 15px; position: fixed; bottom: 0; width: 100%;">
+
+        <div class="footer-container fila-superior">
+            <p>N° de Matrícula en SSN 78570</p>
+            <p>Atención al Asegurado 0800-666-8400</p>
+            
+        </div>
+        <div class="footer-container fila-inferior">
+            <p>Organismo de Control </p>
+            <p><a href="https://www.argentina.gob.ar/superintendencia-de-seguros">Superintendencia de Seguros</a></p>
+            <p><img src="assets/ssn_logo - Editado.png" alt="SSN Logo" style= "color:black;"></p>
+            <p><a href="terminos.html" target="_blank">Términos y Condiciones</a></p>
+        </div>
+    </footer>
+
+
+
+
+style="border: none; width: auto; padding: 10px; position: fixed; bottom: 70px; right: 20px;">

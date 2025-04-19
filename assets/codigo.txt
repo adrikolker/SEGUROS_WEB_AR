@@ -1,0 +1,478 @@
+<!-- Columna 1: Texto 
+        <div class="column-text">
+            <img src="assets/atencion.jpg" alt="Personas trabajando" style="max-width: 100%; height: auto;margin-left: 10px;margin-top:15px;"
+            class="img-fluid">
+            <h2>¿Por qué elegirnos?</h2>
+            <ul>
+                <li>✔ Cotización rápida y fácil</li>
+                <li>✔ Compará los mejores seguros</li>
+                <li>✔ Atención personalizada</li>
+                <li>✔ Asesoría profesional y personalizada</li>
+            </ul>  
+       <div class="form-side-content">
+                <img src="assets/imagen-segura.png" alt="Seguridad Garantizada">
+                <p>Tu información está protegida. <br> Trabajamos con empresas certificadas.</p>
+            </div>-->         
+
+
+
+
+/* 1️⃣ ESTILOS GENERALES */
+/* ============================= */
+.column-text h2 {
+    font-size: 1.8rem;
+    color: #9f339d;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.column-text ul {
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+}
+
+.column-text li {
+    font-size: 1rem;
+    margin: 10px 0; /* Increased margin for better spacing */
+    font-weight: bold;
+    gap: 10px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;       
+}
+
+/* Add background image to body */
+body {
+    background-image: url('assets/textura_fondo.jpg'); /* Path to the background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    background: linear-gradient(135deg, #9f339d, #ffe0ff) !important;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 20px;   
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    z-index: 1;
+}
+
+/* ============================= */
+/* 2️⃣ HEADER */
+/* ============================= */
+header {
+    background: linear-gradient(to right, #9f339d, #ffe0ff);
+    padding: 10px 20px; /* Reduced padding for a less tall header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.header-logo img {
+    height: 50px;
+}
+
+/* Links del Header */
+.header-links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+    color: #7b157a;
+}
+
+/* Ajuste para que el contenido no quede debajo del header */
+body > *:not(header) {
+    margin-top: 0 px; /* Se ajusta para evitar que el header lo tape */
+}
+
+/* ============================= */
+/* 3️⃣ CONTENEDOR PRINCIPAL (Diseño en columnas) */
+/* ============================= */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1800px;
+    margin-top: 100px;
+    margin-bottom: 0%;
+    margin-left: 0; /* Remove left margin to eliminate white space */
+
+    padding: 0; /* Remove padding to eliminate white space */
+
+    gap: 20px;
+}
+
+
+/* Align icons and buttons horizontally */
+.column-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* Change to row for horizontal alignment */
+    align-items: flex-start; /* Align items to the start */
+    justify-content: space-around; /* Distribute space evenly */
+    gap: 15px; /* Espaciado entre botones */
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column; /* Stack icon and button vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.elegirnos {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    margin: 20px auto;   
+    padding: 20px; /* Remove padding to eliminate white space */
+    gap: 15px;
+}
+/* Título */
+.elegirnos h2 {
+    font-size: 2rem;
+    color: #9f339d; /* Color principal */
+    margin-bottom: 20px;
+}
+
+/* Lista de características */
+.elegirnos ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0;
+}
+
+.elegirnos ul li {
+    padding-left: 20px;
+    text-align: left;
+    position: relative;
+}
+
+/* Icono ✔ */
+.elegirnos ul li::before {
+    content: "✔";
+    color: #9f339d;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+
+/* 🔵 ESTILOS PARA CADA COLUMNA */
+/* ============================= */
+.column-text h2 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.column-text ul {
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+    color: white;
+}
+
+.column-text li {
+    font-size: 1rem;
+    margin: 10px 0; /* Increased margin for better spacing */
+    font-weight: white bold;
+    gap: 10px;
+}
+
+/* Estilos para el contenedor del icono */
+.column-buttons img {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%; /* Hace que el fondo sea circular */
+    background-color: transparent; /* Fondo transparente */
+    border: 5px solid white; /* Borde blanco */
+    margin-bottom: 30px; /* Add margin to separate icons from buttons */
+
+    width: 100px; /* Tamaño del círculo */
+    height: 100px; /* Tamaño del círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el icono dentro del contenedor */
+.icon {
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/* ============================= */
+/* Contact Info Section */
+/* ============================= */
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    border: none; 
+    width: auto; 
+    padding: 10px; 
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* ============================= */
+/* 6️⃣ BOTONES */
+/* ============================= */
+.btn {
+    display: block;
+    font-size: 1.2rem;
+    padding: 5px;
+    gap: 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    transition: background 0.3s ease, transform 0.2s ease;
+    background: linear-gradient(to right, #9f339d, #df7edf);
+    color: white !important;
+    border: none;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #7b157a, #c05ec0);
+}
+
+
+.contact-info {
+    position: fixed;
+    display: flex;
+    bottom: 50px; /* Ajusta según la altura del footer */
+    right: 20px;
+    gap: 5px; /* Menor separación entre iconos */
+    padding: 5 px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-btn img {
+    width: 50px; /* Puedes ajustar el tamaño de la imagen si es necesario */
+    height: 50px;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.1s ease;
+}
+
+.whatsapp-btn:active img {
+    transform: scale(0.9); /* Efecto al hacer clic */
+}
+
+.instagram-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.instagram-btn img {
+    width: 50px; /* Puedes ajustar el tamaño de la imagen si es necesario */
+    height: 50px;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.1s ease;
+    background: transparent;    
+    clip-path: circle(40% at center); /* Hace un recorte circular */           
+}
+
+.instagram-btn:active img {
+    transform: scale(0.9); /* Efecto al hacer clic */
+}
+
+.facebook-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.facebook-btn img {
+    width: 50px; /* Puedes ajustar el tamaño de la imagen si es necesario */
+    height: 50px;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.1s ease;
+    clip-path: circle(40% at center); /* Hace un recorte circular */    
+}
+
+.facebook-btn:active img {
+    transform: scale(0.9); /* Efecto al hacer clic */
+}
+/* ============================= */
+/* 7️⃣ FOOTER */
+/* ============================= */
+footer {
+    background: linear-gradient(to right, #9f339d, #ffe0ff);
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    /*font-weight: bold;*/
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 5 px;
+}
+
+/* Contenedor general del footer */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Primera línea del footer (Matrícula y Atención) */
+.fila-superior {
+    border-bottom: 1px solid black; /* Línea divisoria entre las dos filas */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* Segunda línea del footer */
+.fila-inferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Separadores automáticos " | " excepto en el último elemento */
+.footer-container p:not(:last-child)::after {
+    content: " | ";
+    margin-left: 10px;
+    /*font-weight: bold;*/
+    color: black;
+}
+
+/* Espaciado entre el logo y los textos */
+.footer-container img {
+    height: 30px;
+    margin: 0 10px;
+}
+
+/* Estilos de enlaces */
+.footer-container a {
+    color: black;
+    text-decoration: none;
+    /*font-weight: bold;*/
+    transition: color 0.3s ease;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+    color: #7b157a;
+}
+
+/* ============================= */
+/* 8️⃣ RESPONSIVIDAD */
+/* ============================= */
+@media (max-width: 992px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .column {
+        max-width: 100%;
+    }
+
+    .column-buttons img {
+        max-width: 200px;
+    }
+
+    .btn {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fila-inferior {
+        flex-direction: column;
+    }
+
+    /* Quita los separadores en dispositivos móviles */
+    .footer-container p:not(:last-child)::after {
+        content: "";
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

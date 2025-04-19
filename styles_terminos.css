@@ -1,0 +1,137 @@
+<<<<<<< HEAD
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to right, #9f339d, #ffe0ff); /* Degradado */
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Sección de términos */
+.terminos {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Títulos de secciones */
+.terminos h2 {
+    color: #9f339d; /* Color principal */
+    border-bottom: 2px solid #9f339d;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+/* Párrafos */
+.terminos p {
+    text-align: justify;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(to right, #9f339d, #ffe0ff); /* Degradado */
+    color: white;
+    margin-top: 20px;
+}
+
+/* Enlace de regreso */
+footer a {
+    color: white; /* Texto blanco */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+=======
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to right, #9f339d, #ffe0ff); /* Degradado */
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Sección de términos */
+.terminos {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Títulos de secciones */
+.terminos h2 {
+    color: #9f339d; /* Color principal */
+    border-bottom: 2px solid #9f339d;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+/* Párrafos */
+.terminos p {
+    text-align: justify;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(to right, #9f339d, #ffe0ff); /* Degradado */
+    color: white;
+    margin-top: 20px;
+}
+
+/* Enlace de regreso */
+footer a {
+    color: white; /* Texto blanco */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+>>>>>>> fad63823ea3cc11541a512fbdecc9a3bb6d3f9be

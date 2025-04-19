@@ -1,0 +1,425 @@
+<<<<<<< HEAD
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado con imagen de fondo */
+.header {
+    position: relative;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    height: 150px; /* Reduje la altura */
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Sección "Quiénes Somos" */
+.quienes-somos {
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.quienes-somos h2 {
+    font-size: 1.8rem;
+    color: #9f339d;
+    font-weight: bold;
+}
+
+.quienes-somos p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Íconos de valores */
+.container-valores {
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+}
+
+.container-valores img {
+    width: 180px; /* Reducí el tamaño */
+}
+
+.valores {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.valores p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #7D3C98;
+}
+
+/* Sección Misión y Visión */
+.container-mision {
+    width: 100%;
+    height: 60vh; /* Reduje la altura */
+    background: url('fondo.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    flex-wrap: wrap; /* Para que se adapte mejor en pantallas pequeñas */
+}
+
+.card {
+    width: 28%;
+    min-width: 250px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background: purple;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+
+h3 {
+    margin-top: 15px;
+    font-style: italic;
+}
+
+p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* Línea decorativa */
+.line {
+    width: 10%;
+    height: 2px;
+    background: black;
+    margin: 8px auto;
+}
+
+/* Botón de regresar */
+.btn-regresar {
+    display: block;
+    width: 180px;
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #9f339d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 15px auto;
+}
+
+.btn-regresar:hover {
+    background-color: #7b157a;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(to right, #9f339d, #ffe0ff); /* Degradado */
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .overlay h1 {
+        font-size: 2rem;
+    }
+
+    .quienes-somos {
+        max-width: 90%;
+    }
+
+    .valores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-mision {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .valores p {
+        font-size: 14px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+=======
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado con imagen de fondo */
+.header {
+    position: relative;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    height: 150px; /* Reduje la altura */
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Sección "Quiénes Somos" */
+.quienes-somos {
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.quienes-somos h2 {
+    font-size: 1.8rem;
+    color: #9f339d;
+    font-weight: bold;
+}
+
+.quienes-somos p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Íconos de valores */
+.container-valores {
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+}
+
+.container-valores img {
+    width: 180px; /* Reducí el tamaño */
+}
+
+.valores {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.valores p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #7D3C98;
+}
+
+/* Sección Misión y Visión */
+.container-mision {
+    width: 100%;
+    height: 60vh; /* Reduje la altura */
+    background: url('fondo.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    flex-wrap: wrap; /* Para que se adapte mejor en pantallas pequeñas */
+}
+
+.card {
+    width: 28%;
+    min-width: 250px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background: purple;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+
+h3 {
+    margin-top: 15px;
+    font-style: italic;
+}
+
+p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* Línea decorativa */
+.line {
+    width: 10%;
+    height: 2px;
+    background: black;
+    margin: 8px auto;
+}
+
+/* Botón de regresar */
+.btn-regresar {
+    display: block;
+    width: 180px;
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #9f339d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 15px auto;
+}
+
+.btn-regresar:hover {
+    background-color: #7b157a;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(to right, #9f339d, #ffe0ff); /* Degradado */
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .overlay h1 {
+        font-size: 2rem;
+    }
+
+    .quienes-somos {
+        max-width: 90%;
+    }
+
+    .valores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-mision {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .valores p {
+        font-size: 14px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+>>>>>>> fad63823ea3cc11541a512fbdecc9a3bb6d3f9be

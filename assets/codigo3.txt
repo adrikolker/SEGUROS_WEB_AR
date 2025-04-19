@@ -1,0 +1,406 @@
+/* ============================= */
+/* 1️⃣ ESTILOS GENERALES */
+/* ============================= */
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to left, #9f339d, #ffe0ff);
+    background-size: 100%;
+    background-position: center;
+    position: relative; /* Make it a positioning context */
+    /*z-index: 1; /* Ensure it's above other elements */
+    min-height: 100vh; /* Ensure full viewport height */
+    }
+/*
+/* espaciado antes del footer */
+
+.footer-spacer{
+    margin-bottom: 250px;
+}
+
+/* ============================= */
+/* 2️⃣ HEADER */
+/* ============================= */
+header {
+    background: linear-gradient(to right, #9f339d, #ffe0ff);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.header-logo img {
+    height: 50px;
+}
+
+/* Links del Header */
+.header-links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+    color: #7b157a;
+}
+
+/* Ajuste para que el contenido no quede debajo del header */
+body > *:not(header) {
+    margin-top: 0px;
+}
+
+/* ============================= */
+/* 3️⃣ PRIMERA PÁGINA - CONTENEDOR PRINCIPAL */
+/* ============================= */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribuye mejor el contenido */
+    width: 100%;
+    min-height: 100vh; /* Se ajusta a la altura de la pantalla */
+    padding: clamp(50px, 10vh, 100px) 20px 0px 20px; /* Ajusta el padding de forma responsiva */
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+/* Align icons and buttons horizontally */
+.column-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;/* Aumentado de 20px a 50px para mayor separación horizontal */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding-top: 200px; /* Añadido para mover los botones más arriba */
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+}
+
+/* Estilos para el contenedor del icono */
+.column-buttons img {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px solid white;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el icono dentro del contenedor */
+.icon {
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+/* ============================= */
+/* 4️⃣ SEGUNDA PÁGINA */
+/* ============================= */
+
+/*Espacio del body entre divisiones*/
+
+.body-spacer {
+    margin: 500px; 
+}
+
+/* Contenedor con diseño flex para lista e imagen */
+.elegirnos-container {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px 30px 30px 30px;     
+    border-radius: 50px;
+    box-shadow: 10px 25px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Sección de texto */
+.elegirnos-texto {
+    flex: 1;
+    padding-right: 20px;
+}
+
+/* Imagen alineada a la derecha */
+.imagen-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.img-fluid {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+/* Lista de beneficios */
+.elegirnos-container ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.elegirnos-container li {
+    font-size: 1.1rem;
+    margin: 15px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.elegirnos-container li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilo para la imagen del ejecutivo */
+.imagen-container {
+    position: relative;
+    z-index: 5; /* Mayor z-index para que esté por encima */
+    margin-top: 30px;
+    margin-bottom: -80px; /* Valor negativo para hacer que la imagen se superponga */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+/* ============================= */
+/* 5️⃣ CONTACT INFO */
+/* ============================= */
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.contact-info {
+    position: fixed;
+    display: flex;
+    bottom: 50px;
+    right: 20px;
+    gap: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    z-index: 1000;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    animation: bounce 1s infinite ease-in-out;
+}
+
+.whatsapp-btn img {
+    width: 40px;
+    height: 40px;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.2s ease;   
+}
+
+.whatsapp-btn:active img {
+    transform: scale(0.9);
+}
+
+.instagram-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;   
+    transform: scale(1.2); /* Aumenta el tamaño */
+}
+
+.instagram-btn img {
+    width: 25px;
+    height: 25px;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.1s ease;
+    background: transparent;    
+    clip-path: circle(40% at center);           
+}
+
+.instagram-btn:active img {
+    transform: scale(0.9);
+}
+
+.facebook-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    transform: scale(1.2); /* Aumenta el tamaño */
+}
+
+.facebook-btn img {
+    width: 25px;
+    height: 25px;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.1s ease;
+    clip-path: circle(40% at center);   
+}
+
+.facebook-btn:active img {
+    transform: scale(0.9);
+}
+
+/* ============================= */
+/* 6️⃣ BOTONES */
+/* ============================= */
+.btn {
+    display: block;
+    font-size: 1.2rem;
+    padding: 5px;
+    gap: 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    transition: background 0.3s ease, transform 0.2s ease;
+    background: linear-gradient(to right, #9f339d, #df7edf);
+    color: white !important;
+    border: none;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #7b157a, #c05ec0);
+}
+
+
+/* ============================= */
+/* 7️⃣ FOOTER */
+/* ============================= */
+footer {
+    background: linear-gradient(to right, #9f339d, #ffe0ff);
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    position: relative; /* Changed from fixed to relative */
+    z-index: 1000;
+    height:auto;
+}
+
+/* Contenedor general del footer */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Primera línea del footer (Matrícula y Atención) */
+.fila-superior {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* Segunda línea del footer */
+.fila-inferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Separadores automáticos " | " excepto en el último elemento */
+.footer-container p:not(:last-child)::after {
+    content: " | ";
+    margin-left: 10px;
+    color: black;
+}
+
+/* Espaciado entre el logo y los textos */
+.footer-container img {
+    height: 30px;
+    margin: 0 10px;
+}
+
+/* Estilos de enlaces */
+.footer-container a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+    color: #7b157a;
+}
+
+/* ============================= */
+/* 8️⃣ RESPONSIVIDAD */
+/* ============================= */
+/* ============================= */
+

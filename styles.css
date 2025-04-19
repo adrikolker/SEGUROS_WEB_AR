@@ -1,0 +1,1465 @@
+<<<<<<< HEAD
+/* ============================= */
+/* 1️⃣ ESTILOS GENERALES */
+/* ============================= */
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to left, #9f339d, #ffe0ff);
+    background-size: 100%;
+    background-position: center;
+    position: relative; /* Make it a positioning context */
+    /*z-index: 1; /* Ensure it's above other elements */
+    min-height: 100vh; /* Ensure full viewport height */
+    }
+/*
+/* espaciado antes del footer */
+
+.footer-spacer{
+    margin-bottom: 250px;
+}
+
+/* ============================= */
+/* 2️⃣ HEADER */
+/* ============================= */
+header {
+    background: linear-gradient(to right, #9f339d, #ffe0ff);
+    padding: 40px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.header-logo img {
+    height: 80px;
+}
+
+/* Links del Header */
+.header-links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.3rem; /* Aumenta el tamaño del texto */
+    padding: 10px 15px; /* Agrega más espacio alrededor */
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+    color: #7b157a;
+}
+
+/* Ajuste para que el contenido no quede debajo del header */
+body > *:not(header) {
+    margin-top: 0px;
+}
+
+/* ============================= */
+/* 3️⃣ PRIMERA PÁGINA - CONTENEDOR PRINCIPAL */
+/* ============================= */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribuye mejor el contenido */
+    width: 100%;
+    min-height: 100vh; /* Se ajusta a la altura de la pantalla */
+    padding: clamp(50px, 10vh, 100px) 20px 0px 20px; /* Ajusta el padding de forma responsiva */
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+/* Align icons and buttons horizontally */
+.column-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Asegura que el espacio se distribuye bien */
+    align-items: flex-start;
+    gap: 300px; /* Más espacio entre botones */
+    flex-wrap: wrap; /* Permite que los botones se muevan a una nueva línea */
+    min-width: 500px; /* Aumentado para asegurar que haya suficiente espacio */
+    max-width: 1200px;
+    padding: 15px 30px;
+    padding-top: 200px;
+}
+
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+    transform: scale(1.5); /* Aumenta el tamaño de los botones */
+    transition: transform 0.3s ease-in-out; /* Agrega animación */
+    gap:10px   
+}
+
+/* Estilos para el contenedor del icono */
+.column-buttons img {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 6px solid white;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el icono dentro del contenedor */
+.icon {
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+/* ============================= */
+/* 4️⃣ SEGUNDA PÁGINA */
+/* ============================= */
+
+/*Espacio del body entre divisiones*/
+
+.body-spacer {
+    margin: 150px 0; /* Ajustado para mantener proporción sin exceso de margen */
+}
+
+/* Contenedor con diseño flex para lista e imagen */
+.elegirnos-container {
+    max-width: 900px; /* Un poco más amplio */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 10px 25px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Sección de texto */
+.elegirnos-texto {
+    flex: 1;
+    padding-right: 30px;
+    font-size: 1.3rem; /* Un poco más grande */
+}
+
+/* 📸 Imagen alineada a la derecha */
+.imagen-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.img-fluid {
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ Lista de beneficios */
+.elegirnos-container ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.elegirnos-container li {
+    font-size: 1.4rem;
+    margin: 12px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.elegirnos-container li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilo para la imagen del ejecutivo */
+.imagen-container {
+    position: relative;
+    z-index: 5; /* Mayor z-index para que esté por encima */
+    margin-top: 30px;
+    margin-bottom: -80px; /* Valor negativo para hacer que la imagen se superponga */
+}
+
+
+/* ============================= */
+/* 5️⃣ CONTACT INFO */
+/* ============================= */
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.contact-info {
+    position: fixed;
+    display: flex;
+    bottom: 50px;
+    right: 20px;
+    gap: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    z-index: 1000;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    animation: bounce 1s infinite ease-in-out;
+}
+
+.whatsapp-btn img {
+    width: 60px;
+    height: 60px;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.2s ease;   
+}
+
+.whatsapp-btn:active img {
+    transform: scale(0.9);
+}
+
+.instagram-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;   
+    transform: scale(1.2); /* Aumenta el tamaño */
+}
+
+.instagram-btn img {
+    width: 30px;
+    height: 30px;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.1s ease;
+    background: transparent;    
+    clip-path: circle(40% at center);           
+}
+
+.instagram-btn:active img {
+    transform: scale(0.9);
+}
+
+.facebook-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    transform: scale(1.2); /* Aumenta el tamaño */
+}
+
+.facebook-btn img {
+    width: 30px;
+    height: 30px;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.1s ease;
+    clip-path: circle(40% at center);   
+}
+
+.facebook-btn:active img {
+    transform: scale(0.9);
+}
+
+/* ============================= */
+/* 6️⃣ BOTONES */
+/* ============================= */
+.btn {
+    display: block;
+    font-size: 1.2rem;
+    padding: 5px;
+    gap: 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    transition: background 0.3s ease, transform 0.2s ease;
+    background: linear-gradient(to right, #9f339d, #df7edf);
+    color: white !important;
+    border: none;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #7b157a, #c05ec0);
+}
+
+/*footer spacer------*/
+
+.footer-spacer {
+    margin: 150px 0; /* Ajustado para mantener proporción sin exceso de margen */
+}
+/* ============================= */
+/* 7️⃣ FOOTER */
+/* ============================= */
+
+footer {
+    background: linear-gradient(to right, #9f339d, #ffe0ff);
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    position: relative; /* Changed from fixed to relative */
+    z-index: 1000;
+    height:auto;
+}
+
+/* Contenedor general del footer */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Primera línea del footer (Matrícula y Atención) */
+.fila-superior {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Segunda línea del footer */
+.fila-inferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Separadores automáticos " | " excepto en el último elemento */
+.footer-container p:not(:last-child)::after {
+    content: " | ";
+    margin-left: 10px;
+    color: black;
+}
+
+/* Espaciado entre el logo y los textos */
+.footer-container img {
+    height: 40px;
+    margin: 0 10px;
+}
+
+/* Estilos de enlaces */
+.footer-container a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+    color: #7b157a;
+}
+
+/* ============================= */
+/* 8 RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Mobile Devices (up to 767px) */
+@media screen and (max-width: 767px) {
+    /* Header Responsive */
+    header {
+        flex-direction: column;
+        padding: 15px;
+        position: fixed;
+    }
+
+    .header-logo img {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .header-links {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-links a {
+        display: block;
+        padding: 8px 0;
+        font-size: 1.1rem;
+    }
+
+    /* Main container adjustments */
+    .flex-container {
+        padding-top: 160px; /* Add more space to account for the taller header */
+        min-height: calc(100vh - 160px);
+    }
+
+    /* Column Buttons Responsive */
+    .column-buttons {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; /* Asegura que el espacio se distribuye bien */
+        gap: 30px;
+        padding-top: 30px;
+        min-width: auto;
+        width: 40%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .icon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0;
+        transform: scale(1.2); /* Slightly smaller than desktop */
+        transition: transform 0.3s ease-in-out; /* Agrega animación */
+        gap:10px   
+    }
+    
+
+    .column-buttons img {
+        width: 80px;
+        height: 80px;
+        border-width: 4px;
+    }
+
+    /* "Por qué elegirnos" Section Responsive */
+    .elegirnos-container {
+        flex-direction: column;
+        padding: 25px 20px;
+        border-radius: 30px;
+        margin: 0 15px;
+    }
+
+    .elegirnos-texto {
+        margin-bottom: 25px;
+        padding-right: 0;
+        font-size: 1.1rem;
+    }
+
+    .elegirnos-container li {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .imagen-container {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+    }
+
+    /* Body spacing adjustments */
+    .body-spacer {
+        margin: 100px 0;
+    }
+    
+    .footer-spacer {
+        margin-bottom: 150px;
+    }
+
+    /* Contact info adjustment */
+    .contact-info {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .whatsapp-btn img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .instagram-btn img,
+    .facebook-btn img {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Footer Responsive */
+    .footer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .fila-superior,
+    .fila-inferior {
+        width: 100%;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .footer-container p {
+        margin: 5px 0;
+    }
+
+    .footer-container p:not(:last-child)::after {
+        content: "";
+        display: none;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+    
+}
+
+/* Tablet Devices (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .flex-container {
+        padding: 30px 10px 0;
+    }
+
+    .column-buttons {
+        gap: 40px;
+        padding-top: 150px;
+    }
+
+    .elegirnos-container {
+        max-width: 90%;
+        padding: 20px 10px;
+    }
+
+    .elegirnos-texto {
+        padding-right: 10px;
+    }
+}
+
+/* Notebooks and Larger Screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+
+    /* Logo */
+    .header-logo img {
+    height: 60px;
+    }
+
+    /* Links del Header */
+    .header-links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1rem; /* Aumenta el tamaño del texto */
+    padding: 10px 15px; /* Agrega más espacio alrededor */
+    }
+
+    .flex-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 30px;
+        margin-bottom: 0px; /* Disminuye el margen inferior */
+        padding-bottom: 10px; /* Ajusta el espacio interno */
+        }        
+    
+    .elegirnos-container {
+        margin-top: 150px; /* Ajusta este valor según lo necesites */
+    }
+    
+
+    .column-buttons {
+        gap: 100px;
+    }
+
+    .column-buttons button {
+        font-size: 1.8rem;
+        padding: 50px 40px;
+    }
+
+    .icon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:20px;
+        transform: scale(1.2); /* Aumenta el tamaño de los botones */
+        transition: transform 0.3s ease-in-out; /* Agrega animación */
+        gap:10px   
+    }
+    /* Contenedor con diseño flex para lista e imagen */
+    .elegirnos-container {
+        max-width: 700px; /* Un poco más amplio */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 20px;
+        border-radius: 40px;
+        box-shadow: 10px 25px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+    
+    /* Sección de texto */
+    .elegirnos-texto {
+        flex: 1;
+        padding-right: 20px;
+        font-size: 1rem; /* Un poco más grande */
+    }
+    
+    /* 📸 Imagen alineada a la derecha */
+    .imagen-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    
+    .img-fluid {
+        max-width: 90%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+    }
+    
+    .img-fluid:hover {
+        transform: scale(1.05);
+    }
+    
+    /* ✅ Lista de beneficios */
+    .elegirnos-container ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
+    .elegirnos-container li {
+        font-size: 1.1rem;
+        margin: 12px 0;
+        padding-left: 30px;
+        position: relative;
+    }
+    
+    .elegirnos-container li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .body-spacer {
+        margin: 30px 0; /* Aumentado para mayor separación en pantallas grandes */
+    }
+    .footer-spacer {
+        margin: 50px 0; /* Aumentado para mayor separación en pantallas grandes */
+    }
+
+    /* Footer Responsive */
+    .footer-container {
+        flex-direction: row;
+        gap: 10px;
+        padding-bottom: 0px;
+    }
+    /* Primera línea del footer (Matrícula y Atención) */
+   .fila-superior {
+    border-bottom: 1px solid black;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 0.8rem;
+   }
+
+    /* Segunda línea del footer */
+    .fila-inferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 0px;
+    }
+    /* Espaciado entre el logo y los textos */
+   .footer-container img {
+    height: 30px;
+    margin: 0 10px; 
+    }
+}
+=======
+/* ============================= */
+/* 1️⃣ ESTILOS GENERALES */
+/* ============================= */
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to left, #9f339d, #ffe0ff);
+    background-size: 100%;
+    background-position: center;
+    position: relative; /* Make it a positioning context */
+    /*z-index: 1; /* Ensure it's above other elements */
+    min-height: 100vh; /* Ensure full viewport height */
+    }
+/*
+/* espaciado antes del footer */
+
+.footer-spacer{
+    margin-bottom: 250px;
+}
+
+/* ============================= */
+/* 2️⃣ HEADER */
+/* ============================= */
+header {
+    background: linear-gradient(to right, #9f339d, #ffe0ff);
+    padding: 40px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.header-logo img {
+    height: 80px;
+}
+
+/* Links del Header */
+.header-links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.3rem; /* Aumenta el tamaño del texto */
+    padding: 10px 15px; /* Agrega más espacio alrededor */
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+    color: #7b157a;
+}
+
+/* Ajuste para que el contenido no quede debajo del header */
+body > *:not(header) {
+    margin-top: 0px;
+}
+
+/* ============================= */
+/* 3️⃣ PRIMERA PÁGINA - CONTENEDOR PRINCIPAL */
+/* ============================= */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribuye mejor el contenido */
+    width: 100%;
+    min-height: 100vh; /* Se ajusta a la altura de la pantalla */
+    padding: clamp(50px, 10vh, 100px) 20px 0px 20px; /* Ajusta el padding de forma responsiva */
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+/* Align icons and buttons horizontally */
+.column-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Asegura que el espacio se distribuye bien */
+    align-items: flex-start;
+    gap: 300px; /* Más espacio entre botones */
+    flex-wrap: wrap; /* Permite que los botones se muevan a una nueva línea */
+    min-width: 500px; /* Aumentado para asegurar que haya suficiente espacio */
+    max-width: 1200px;
+    padding: 15px 30px;
+    padding-top: 200px;
+}
+
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+    transform: scale(1.5); /* Aumenta el tamaño de los botones */
+    transition: transform 0.3s ease-in-out; /* Agrega animación */
+    gap:10px   
+}
+
+/* Estilos para el contenedor del icono */
+.column-buttons img {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 6px solid white;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el icono dentro del contenedor */
+.icon {
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+/* ============================= */
+/* 4️⃣ SEGUNDA PÁGINA */
+/* ============================= */
+
+/*Espacio del body entre divisiones*/
+
+.body-spacer {
+    margin: 150px 0; /* Ajustado para mantener proporción sin exceso de margen */
+}
+
+/* Contenedor con diseño flex para lista e imagen */
+.elegirnos-container {
+    max-width: 900px; /* Un poco más amplio */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 10px 25px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Sección de texto */
+.elegirnos-texto {
+    flex: 1;
+    padding-right: 30px;
+    font-size: 1.3rem; /* Un poco más grande */
+}
+
+/* 📸 Imagen alineada a la derecha */
+.imagen-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.img-fluid {
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ Lista de beneficios */
+.elegirnos-container ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.elegirnos-container li {
+    font-size: 1.4rem;
+    margin: 12px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.elegirnos-container li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilo para la imagen del ejecutivo */
+.imagen-container {
+    position: relative;
+    z-index: 5; /* Mayor z-index para que esté por encima */
+    margin-top: 30px;
+    margin-bottom: -80px; /* Valor negativo para hacer que la imagen se superponga */
+}
+
+
+/* ============================= */
+/* 5️⃣ CONTACT INFO */
+/* ============================= */
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.contact-info {
+    position: fixed;
+    display: flex;
+    bottom: 50px;
+    right: 20px;
+    gap: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    z-index: 1000;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    animation: bounce 1s infinite ease-in-out;
+}
+
+.whatsapp-btn img {
+    width: 60px;
+    height: 60px;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.2s ease;   
+}
+
+.whatsapp-btn:active img {
+    transform: scale(0.9);
+}
+
+.instagram-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;   
+    transform: scale(1.2); /* Aumenta el tamaño */
+}
+
+.instagram-btn img {
+    width: 30px;
+    height: 30px;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.1s ease;
+    background: transparent;    
+    clip-path: circle(40% at center);           
+}
+
+.instagram-btn:active img {
+    transform: scale(0.9);
+}
+
+.facebook-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    transform: scale(1.2); /* Aumenta el tamaño */
+}
+
+.facebook-btn img {
+    width: 30px;
+    height: 30px;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.1s ease;
+    clip-path: circle(40% at center);   
+}
+
+.facebook-btn:active img {
+    transform: scale(0.9);
+}
+
+/* ============================= */
+/* 6️⃣ BOTONES */
+/* ============================= */
+.btn {
+    display: block;
+    font-size: 1.2rem;
+    padding: 5px;
+    gap: 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    transition: background 0.3s ease, transform 0.2s ease;
+    background: linear-gradient(to right, #9f339d, #df7edf);
+    color: white !important;
+    border: none;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #7b157a, #c05ec0);
+}
+
+/*footer spacer------*/
+
+.footer-spacer {
+    margin: 150px 0; /* Ajustado para mantener proporción sin exceso de margen */
+}
+/* ============================= */
+/* 7️⃣ FOOTER */
+/* ============================= */
+
+footer {
+    background: linear-gradient(to right, #9f339d, #ffe0ff);
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    position: relative; /* Changed from fixed to relative */
+    z-index: 1000;
+    height:auto;
+}
+
+/* Contenedor general del footer */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Primera línea del footer (Matrícula y Atención) */
+.fila-superior {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Segunda línea del footer */
+.fila-inferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Separadores automáticos " | " excepto en el último elemento */
+.footer-container p:not(:last-child)::after {
+    content: " | ";
+    margin-left: 10px;
+    color: black;
+}
+
+/* Espaciado entre el logo y los textos */
+.footer-container img {
+    height: 40px;
+    margin: 0 10px;
+}
+
+/* Estilos de enlaces */
+.footer-container a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+    color: #7b157a;
+}
+
+/* ============================= */
+/* 8 RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Mobile Devices (up to 767px) */
+@media screen and (max-width: 767px) {
+    /* Header Responsive */
+    header {
+        flex-direction: column;
+        padding: 15px;
+        position: fixed;
+    }
+
+    .header-logo img {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .header-links {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-links a {
+        display: block;
+        padding: 8px 0;
+        font-size: 1.1rem;
+    }
+
+    /* Main container adjustments */
+    .flex-container {
+        padding-top: 160px; /* Add more space to account for the taller header */
+        min-height: calc(100vh - 160px);
+    }
+
+    /* Column Buttons Responsive */
+    .column-buttons {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; /* Asegura que el espacio se distribuye bien */
+        gap: 30px;
+        padding-top: 30px;
+        min-width: auto;
+        width: 40%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .icon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0;
+        transform: scale(1.2); /* Slightly smaller than desktop */
+        transition: transform 0.3s ease-in-out; /* Agrega animación */
+        gap:10px   
+    }
+    
+
+    .column-buttons img {
+        width: 80px;
+        height: 80px;
+        border-width: 4px;
+    }
+
+    /* "Por qué elegirnos" Section Responsive */
+    .elegirnos-container {
+        flex-direction: column;
+        padding: 25px 20px;
+        border-radius: 30px;
+        margin: 0 15px;
+    }
+
+    .elegirnos-texto {
+        margin-bottom: 25px;
+        padding-right: 0;
+        font-size: 1.1rem;
+    }
+
+    .elegirnos-container li {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .imagen-container {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+    }
+
+    /* Body spacing adjustments */
+    .body-spacer {
+        margin: 100px 0;
+    }
+    
+    .footer-spacer {
+        margin-bottom: 150px;
+    }
+
+    /* Contact info adjustment */
+    .contact-info {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .whatsapp-btn img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .instagram-btn img,
+    .facebook-btn img {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Footer Responsive */
+    .footer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .fila-superior,
+    .fila-inferior {
+        width: 100%;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .footer-container p {
+        margin: 5px 0;
+    }
+
+    .footer-container p:not(:last-child)::after {
+        content: "";
+        display: none;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+    
+}
+
+/* Tablet Devices (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .flex-container {
+        padding: 30px 10px 0;
+    }
+
+    .column-buttons {
+        gap: 40px;
+        padding-top: 150px;
+    }
+
+    .elegirnos-container {
+        max-width: 90%;
+        padding: 20px 10px;
+    }
+
+    .elegirnos-texto {
+        padding-right: 10px;
+    }
+}
+
+/* Notebooks and Larger Screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+
+    /* Logo */
+    .header-logo img {
+    height: 60px;
+    }
+
+    /* Links del Header */
+    .header-links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1rem; /* Aumenta el tamaño del texto */
+    padding: 10px 15px; /* Agrega más espacio alrededor */
+    }
+
+    .flex-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 30px;
+        margin-bottom: 0px; /* Disminuye el margen inferior */
+        padding-bottom: 10px; /* Ajusta el espacio interno */
+        }        
+    
+    .elegirnos-container {
+        margin-top: 150px; /* Ajusta este valor según lo necesites */
+    }
+    
+
+    .column-buttons {
+        gap: 100px;
+    }
+
+    .column-buttons button {
+        font-size: 1.8rem;
+        padding: 50px 40px;
+    }
+
+    .icon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:20px;
+        transform: scale(1.2); /* Aumenta el tamaño de los botones */
+        transition: transform 0.3s ease-in-out; /* Agrega animación */
+        gap:10px   
+    }
+    /* Contenedor con diseño flex para lista e imagen */
+    .elegirnos-container {
+        max-width: 700px; /* Un poco más amplio */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 20px;
+        border-radius: 40px;
+        box-shadow: 10px 25px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+    
+    /* Sección de texto */
+    .elegirnos-texto {
+        flex: 1;
+        padding-right: 20px;
+        font-size: 1rem; /* Un poco más grande */
+    }
+    
+    /* 📸 Imagen alineada a la derecha */
+    .imagen-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    
+    .img-fluid {
+        max-width: 90%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+    }
+    
+    .img-fluid:hover {
+        transform: scale(1.05);
+    }
+    
+    /* ✅ Lista de beneficios */
+    .elegirnos-container ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
+    .elegirnos-container li {
+        font-size: 1.1rem;
+        margin: 12px 0;
+        padding-left: 30px;
+        position: relative;
+    }
+    
+    .elegirnos-container li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .body-spacer {
+        margin: 30px 0; /* Aumentado para mayor separación en pantallas grandes */
+    }
+    .footer-spacer {
+        margin: 50px 0; /* Aumentado para mayor separación en pantallas grandes */
+    }
+
+    /* Footer Responsive */
+    .footer-container {
+        flex-direction: row;
+        gap: 10px;
+        padding-bottom: 0px;
+    }
+    /* Primera línea del footer (Matrícula y Atención) */
+   .fila-superior {
+    border-bottom: 1px solid black;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 0.8rem;
+   }
+
+    /* Segunda línea del footer */
+    .fila-inferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 0px;
+    }
+    /* Espaciado entre el logo y los textos */
+   .footer-container img {
+    height: 30px;
+    margin: 0 10px; 
+    }
+}
+>>>>>>> fad63823ea3cc11541a512fbdecc9a3bb6d3f9be
